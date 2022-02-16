@@ -4,7 +4,7 @@
 
 1. Equations of all three versions of logic function f(c,b,a):
 
-   ![Logic function](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/01-gates/images/equations.png)
+   ![Logic function](Images/Equations.png#gh-light-mode-only)
 
 2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
@@ -39,4 +39,4 @@ end architecture dataflow;
 
 2. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/x/vnvJ](https://www.edaplayground.com/x/vnvJ)
+   [EDA Playgroud project](https://www.edaplayground.com/x/vnvJ)
