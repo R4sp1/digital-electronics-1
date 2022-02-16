@@ -4,8 +4,8 @@
 
 1. Equations of all three versions of logic function f(c,b,a):
 
-   ![Logic function](Images/Equations_white.png#gh-dark-mode-only)
-   ![Logic function](Images/Equations_black.png#gh-light-mode-only)
+   ![Logic function](images/Equations_white.png#gh-dark-mode-only)
+   ![Logic function](images/Equations_black.png#gh-light-mode-only)
 
 2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions.
 
@@ -36,7 +36,7 @@ end architecture dataflow;
 
 1. Screenshot with simulated time waveforms.
 
-   ![Waveform](Images/Waveforms.png)
+   ![Waveform](images/Waveforms.png)
 
 2. Link to public EDA Playground example:
 
