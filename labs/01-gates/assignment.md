@@ -7,7 +7,7 @@
    ![Logic function](Images/Equations_white.png#gh-dark-mode-only)
    ![Logic function](Images/Equations_black.png#gh-light-mode-only)
 
-2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
+2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions.
 
 ```vhdl
 architecture dataflow of gates is
@@ -19,7 +19,7 @@ end architecture dataflow;
 
 ```
 
-3. Complete table with logic functions' values:
+3. Table with logic functions' values:
 
 | **c** | **b** |**a** | **f(c,b,a)_ORG** | **f(c,b,a)_NAND** | **f(c,b,a)_NOR** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -34,10 +34,10 @@ end architecture dataflow;
 
 ### Distributive laws
 
-1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
+1. Screenshot with simulated time waveforms.
 
    ![Waveform](Images/Waveforms.png)
 
-2. Link to your public EDA Playground example:
+2. Link to public EDA Playground example:
 
    [EDA Playgroud project](https://www.edaplayground.com/x/vnvJ)
