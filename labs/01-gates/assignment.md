@@ -7,7 +7,7 @@
    ![Logic function](images/Equations_white.png#gh-dark-mode-only)
    ![Logic function](images/Equations_black.png#gh-light-mode-only)
 
-2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions.
+2. Listing of VHDL architecture from design file (`code/design.vhd`) for all three functions.
 
 ```vhdl
 architecture dataflow of gates is
