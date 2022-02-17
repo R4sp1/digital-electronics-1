@@ -35,9 +35,21 @@ end architecture dataflow;
 ### Distributive laws
 
 1. Screenshot with simulated time waveforms.
-
+   - Original equation rewriten using only NAND and NOR
    ![Waveform](images/Waveforms.png)
+   
+   - Distributive law verification
+   ![Logic function](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/01-gates/images/distributive1.png)
+   ![Waveform](images/Distributive_law.png)
+   ```vhdl
+   architecture dataflow of gates is
+   begin
+         f_left_o  <= (x_i and y_i) or (x_i and z_i);
+         f_right_o <= (x_i) and (y_i or z_i);
+   end architecture dataflow;
+   ```
 
 2. Link to public EDA Playground example:
 
-   [EDA Playgroud project](https://www.edaplayground.com/x/vnvJ)
+   [EDA Playgroud project - basic gates](https://www.edaplayground.com/x/vnvJ)
+   [EDA Playgroud project - distributive laws](https://www.edaplayground.com/x/anrD)
