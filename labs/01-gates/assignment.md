@@ -37,10 +37,14 @@ end architecture dataflow;
 1. Screenshot with simulated time waveforms.
    - Original equation rewriten using only NAND and NOR
    ![Waveform](images/Waveforms.png)
+   (click to open picture in new tab)
    
    - Distributive law verification
+   
    ![Logic function](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/01-gates/images/distributive1.png)
+   
    ![Waveform](images/Distributive_law.png)
+   (click to open picture in new tab)
    ```vhdl
    architecture dataflow of gates is
    begin
