@@ -41,20 +41,21 @@ end architecture dataflow;
    
    - Distributive law verification
    
-   ![Logic function](images/distributive_law_1_black.png#gh-light-mode-only)
-   ![Logic function](images/distributive_law_1_white.png#gh-dark-mode-only)
+      ![Logic function](images/distributive_law_1_black.png#gh-light-mode-only)
+      ![Logic function](images/distributive_law_1_white.png#gh-dark-mode-only)
    
-   ![Waveform](images/Distributive_law.png)
-   (click to open picture in new tab)
-   ```vhdl
-   architecture dataflow of gates is
-   begin
-         f_left_o  <= (x_i and y_i) or (x_i and z_i);
-         f_right_o <= (x_i) and (y_i or z_i);
-   end architecture dataflow;
-   ```
+      ![Waveform](images/Distributive_law.png)
+      (click to open picture in new tab)
+        ```vhdl
+      architecture dataflow of gates is
+      begin
+            f_left_o  <= (x_i and y_i) or (x_i and z_i);
+            f_right_o <= (x_i) and (y_i or z_i);
+      end architecture dataflow;
+      ```
 
 2. Link to public EDA Playground example:
 
    [EDA Playgroud project - basic gates](https://www.edaplayground.com/x/vnvJ)
+   
    [EDA Playgroud project - distributive laws](https://www.edaplayground.com/x/anrD)
