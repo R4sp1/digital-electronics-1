@@ -41,7 +41,8 @@ end architecture dataflow;
    
    - Distributive law verification
    
-   ![Logic function](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/01-gates/images/distributive1.png)
+   ![Logic function](images/distributive_law_1_black.png#gh-light-mode-only)
+   ![Logic function](images/distributive_law_1_white.png#gh-dark-mode-only)
    
    ![Waveform](images/Distributive_law.png)
    (click to open picture in new tab)
