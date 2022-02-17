@@ -1,6 +1,6 @@
 # Digital electronics 1
 
-## Repository for *BPC-DE1* course :ghost:
+## Student's repository for *BPC-DE1* course :ghost:
 
 This is only student's repository based on [course repository](https://github.com/tomas-fryza/digital-electronics-1)
 
