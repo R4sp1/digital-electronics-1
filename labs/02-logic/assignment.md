@@ -26,11 +26,11 @@ Truth table
 
    Greater than:
 
-   ![K-maps](images/kmap_greater.png)
+   ![K-maps](images/kmap_greater.jpg)
 
    Less than:
 
-   ![K-maps](images/kmap_less.png)
+   ![K-maps](images/kmap_less.jpg)
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
