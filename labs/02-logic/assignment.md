@@ -41,11 +41,11 @@
    ```vhdl
     entity comparator_2bit is
     port(
-        b_i           : in  std_logic_vector(2 - 1 downto 0);	--DATA B
-        a_i           : in	std_logic_vector(2 - 1 downto 0);	--DATA A
-        B_greater_A_o : out	std_logic;						--B is greater then A
-        B_equals_A_o  : out	std_logic;						--B equals A
-        B_less_A_o    : out std_logic  						--B is less than A
+        b_i           : in  	std_logic_vector(2 - 1 downto 0);	--DATA B
+        a_i           : in		std_logic_vector(2 - 1 downto 0);	--DATA A
+        B_greater_A_o : out	std_logic;				--B is greater then A
+        B_equals_A_o  : out	std_logic;				--B equals A
+        B_less_A_o    : out std_logic  					--B is less than A
       );
    end entity comparator_2bit;
 
@@ -131,7 +131,7 @@
          report "Stimulus process started" severity note;
 
          --Second test case
-		  s_b <= "0111"; --last two digits of my ID - B si greater then A
+	     s_b <= "0111"; --last two digits of my ID - B si greater then A
          s_a <= "0011";
          wait for 100 ns;
          -- Expected output
@@ -161,3 +161,7 @@
 3. Link to your public EDA Playground example:
 
    [https://www.edaplayground.com/x/Mn92](https://www.edaplayground.com/x/Mn92)
+   
+## References
+
+1. Tomas Fryza. [digital-electronics-1 [Lab 2: Combinational logic]](https://github.com/tomas-fryza/digital-electronics-1/tree/master/labs/02-logic#readme)
