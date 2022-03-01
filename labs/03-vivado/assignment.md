@@ -1,6 +1,6 @@
 # Lab 3: Jiri Jilek
 
-![K-maps](images/artix7-pinout.png =100x100)
+<img src="images/artix7-pinout.png" alt="Artix-7 pinout" width="250"/>
 
 ### Three-bit wide 4-to-1 multiplexer
 
