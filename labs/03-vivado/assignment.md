@@ -1,5 +1,9 @@
 # Lab 3: Jiri Jilek
 
+### Preparation tasks
+
+Artix-7 pinout:
+
 <img src="images/artix7-pinout.png" alt="Artix-7 pinout" width="250"/>
 
 ### Three-bit wide 4-to-1 multiplexer
