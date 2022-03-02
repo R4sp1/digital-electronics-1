@@ -12,11 +12,15 @@ Artix-7 pinout:
 
 ```vhdl
 architecture Behavioral of mux_3bit_4to1 is
+
 begin
+    with sel_i select
+    y_o <= a_i when "00",       -- If sel_i = "00" then y_o = a_i
+           b_i when "01",       -- If sel_i = "01" then y_o = b_i
+           c_i when "10",       -- If sel_i = "10" then y_o = c_i
+           d_i when others;     -- All other combinations (in our case sel_i = "11")
 
-    -- WRITE YOUR CODE HERE
-
-end architecture Behavioral;
+end Behavioral;
 ```
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
