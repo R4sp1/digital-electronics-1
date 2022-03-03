@@ -7,7 +7,7 @@ This is only student's repository based on [course repository](https://github.co
 ### Completed labs
  - [x] 01 - gates
  - [x] 02 - logic
- - [ ] 03 - vivado
+ - [x] 03 - vivado
  - [ ] 04 - adder
  - [ ] 05 - segment
  - [ ] 06 - ffs
