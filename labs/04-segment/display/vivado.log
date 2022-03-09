@@ -1,0 +1,1142 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar  9 11:42:00 2022
+# Process ID: 1720
+# Current directory: F:/digital-electronics-1/labs/04-segment/display
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1552 F:\digital-electronics-1\labs\04-segment\display\display.xpr
+# Log file: F:/digital-electronics-1/labs/04-segment/display/vivado.log
+# Journal file: F:/digital-electronics-1/labs/04-segment/display\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/digital-electronics-1/labs/04-segment/display/display.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APPZ/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1021.234 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hex_7seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_hex_7seg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_hex_7seg'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 3 elements ; formal 'hex_i' expects 4 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:36]
+ERROR: [VRFC 10-3311] expression has 6 elements ; formal 'seg_o' expects 7 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:37]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_hex_7seg in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a50ticsg324-1L
+Top: top
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1342.484 ; gain = 237.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:45]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:47]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:49]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:51]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:53]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:55]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:57]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:59]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:61]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:63]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:65]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:67]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:69]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:71]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:73]
+ERROR: [Synth 8-690] width mismatch in assignment; target has 8 bits, source has 7 bits [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:46]
+ERROR: [Synth 8-285] failed synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+ERROR: [Synth 8-285] failed synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1416.578 ; gain = 311.109
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+3 Infos, 15 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a50ticsg324-1L
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1428.465 ; gain = 11.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:45]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:47]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:49]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:51]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:53]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:55]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:57]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:59]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:61]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:63]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:65]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:67]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:69]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:71]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:73]
+ERROR: [Synth 8-690] width mismatch in assignment; target has 8 bits, source has 7 bits [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:48]
+ERROR: [Synth 8-285] failed synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+ERROR: [Synth 8-285] failed synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1428.465 ; gain = 11.887
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+2 Infos, 15 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a50ticsg324-1L
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1428.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:45]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:47]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:49]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:51]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:53]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:55]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:57]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:59]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:61]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:63]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:65]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:67]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:69]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:71]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 5 wide and choice expression is 4 wide [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:73]
+ERROR: [Synth 8-690] width mismatch in assignment; target has 8 bits, source has 7 bits [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:46]
+ERROR: [Synth 8-285] failed synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+ERROR: [Synth 8-285] failed synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1428.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+2 Infos, 15 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+export_ip_user_files -of_objects  [get_files F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd] -no_script -reset -force -quiet
+remove_files  F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd
+file delete -force F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd
+close [ open F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd w ]
+add_files F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd
+file delete -force F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd w ]
+add_files -fileset sim_1 F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a50ticsg324-1L
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1441.410 ; gain = 12.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (1#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'top' (2#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1441.410 ; gain = 12.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1443.293 ; gain = 14.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1443.293 ; gain = 14.828
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1443.293 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 12 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1537.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1537.844 ; gain = 109.379
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1537.844 ; gain = 109.379
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hex_7seg'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_behav xil_defaultlib.top -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_behav xil_defaultlib.top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.hex_7seg [hex_7seg_default]
+Compiling architecture behavioral of entity xil_defaultlib.top
+Built simulation snapshot top_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/top_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Mar  9 11:53:40 2022. For additional details about this file, please refer to the WebTalk help file at C:/APPZ/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  9 11:53:40 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1537.844 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1537.844 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1547.699 ; gain = 6.027
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1575.113 ; gain = 27.414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (1#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'top' (2#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1605.363 ; gain = 57.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1629.262 ; gain = 81.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1629.262 ; gain = 81.563
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1629.262 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1697.645 ; gain = 149.945
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+set_property is_enabled false [get_files  F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd]
+update_compile_order -fileset sim_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1922.313 ; gain = 21.676
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'top' not found
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1936.637 ; gain = 36.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hex_7seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_hex_7seg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_hex_7seg'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 3 elements ; formal 'hex_i' expects 4 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:36]
+ERROR: [VRFC 10-3311] expression has 6 elements ; formal 'seg_o' expects 7 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:37]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_hex_7seg in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property is_enabled true [get_files  F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd]
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1940.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (1#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1940.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1940.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1940.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1940.023 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CA'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CB'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CD'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CE'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CF'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CG'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1940.023 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hex_7seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_hex_7seg_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 3 elements ; formal 'hex_i' expects 4 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:36]
+ERROR: [VRFC 10-3311] expression has 6 elements ; formal 'seg_o' expects 7 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:37]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_hex_7seg in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property is_enabled true [get_files  F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1981.184 ; gain = 16.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (1#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1981.184 ; gain = 16.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1981.184 ; gain = 16.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1981.184 ; gain = 16.730
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1981.184 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CA'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CB'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CD'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CE'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CF'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CG'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1981.184 ; gain = 16.730
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1981.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (1#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'top' (2#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1981.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1981.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1981.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1981.184 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1981.184 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hex_7seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_hex_7seg_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 3 elements ; formal 'hex_i' expects 4 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:36]
+ERROR: [VRFC 10-3311] expression has 6 elements ; formal 'seg_o' expects 7 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:37]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_hex_7seg in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_runs synth_1 -jobs 4
+[Wed Mar  9 12:08:23 2022] Launched synth_1...
+Run output will be captured here: F:/digital-electronics-1/labs/04-segment/display/display.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Mar  9 12:09:34 2022] Launched impl_1...
+Run output will be captured here: F:/digital-electronics-1/labs/04-segment/display/display.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  9 12:10:42 2022] Launched impl_1...
+Run output will be captured here: F:/digital-electronics-1/labs/04-segment/display/display.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-03:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2026.727 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2DE7A
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {F:/digital-electronics-1/labs/04-segment/display/display.runs/impl_1/top.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Wed Mar  9 12:15:51 2022] Launched synth_1...
+Run output will be captured here: F:/digital-electronics-1/labs/04-segment/display/display.runs/synth_1/runme.log
+[Wed Mar  9 12:15:51 2022] Launched impl_1...
+Run output will be captured here: F:/digital-electronics-1/labs/04-segment/display/display.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  9 12:18:37 2022] Launched synth_1...
+Run output will be captured here: F:/digital-electronics-1/labs/04-segment/display/display.runs/synth_1/runme.log
+[Wed Mar  9 12:18:37 2022] Launched impl_1...
+Run output will be captured here: F:/digital-electronics-1/labs/04-segment/display/display.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {F:/digital-electronics-1/labs/04-segment/display/display.runs/impl_1/top.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  9 12:22:04 2022] Launched synth_1...
+Run output will be captured here: F:/digital-electronics-1/labs/04-segment/display/display.runs/synth_1/runme.log
+[Wed Mar  9 12:22:04 2022] Launched impl_1...
+Run output will be captured here: F:/digital-electronics-1/labs/04-segment/display/display.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {F:/digital-electronics-1/labs/04-segment/display/display.runs/impl_1/top.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a50ticsg324-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3280.609 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3339.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/synth/func/xsim/tb_hex_7seg_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/synth/func/xsim/tb_hex_7seg_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hex_7seg' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/synth/func/xsim'
+"xvhdl --incr --relax -prj tb_hex_7seg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/synth/func/xsim/tb_hex_7seg_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hex_7seg'
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hex_7seg'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:34]
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_hex_7seg'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/synth/func/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_func_synth xil_defaultlib.tb_hex_7seg -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_func_synth xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 3 elements ; formal 'hex_i' expects 4 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:36]
+ERROR: [VRFC 10-3311] expression has 6 elements ; formal 'seg_o' expects 7 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:37]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_hex_7seg in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/synth/func/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/synth/func/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3373.730 ; gain = 108.531
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3877.473 ; gain = 86.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (1#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'top' (2#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3907.203 ; gain = 116.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3930.008 ; gain = 139.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3930.008 ; gain = 139.414
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3936.836 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3978.305 ; gain = 187.711
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hex_7seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_hex_7seg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hex_7seg'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_hex_7seg'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 3 elements ; formal 'hex_i' expects 4 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:36]
+ERROR: [VRFC 10-3311] expression has 6 elements ; formal 'seg_o' expects 7 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:37]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_hex_7seg in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_design
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a50ticsg324-1L
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3978.305 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (1#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'top' (2#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3978.305 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3978.305 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3978.305 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3978.305 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3980.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3980.906 ; gain = 2.602
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3980.906 ; gain = 2.602
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hex_7seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_hex_7seg_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 3 elements ; formal 'hex_i' expects 4 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:36]
+ERROR: [VRFC 10-3311] expression has 6 elements ; formal 'seg_o' expects 7 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:37]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_hex_7seg in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3980.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (1#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'top' (2#1) [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sources_1/new/top.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3980.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3980.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3980.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3980.906 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Finished Parsing XDC File [F:/digital-electronics-1/labs/04-segment/display/display.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 4110.438 ; gain = 129.531
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hex_7seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_hex_7seg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_hex_7seg'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 3 elements ; formal 'hex_i' expects 4 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:36]
+ERROR: [VRFC 10-3311] expression has 6 elements ; formal 'seg_o' expects 7 [F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:37]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_hex_7seg in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hex_7seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_hex_7seg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_hex_7seg'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.hex_7seg [hex_7seg_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_hex_7seg
+Built simulation snapshot tb_hex_7seg_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Mar  9 12:31:58 2022. For additional details about this file, please refer to the WebTalk help file at C:/APPZ/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  9 12:31:58 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 4323.363 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_hex_7seg_behav -key {Behavioral:sim_1:Functional:tb_hex_7seg} -tclbatch {tb_hex_7seg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source tb_hex_7seg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_hex_7seg/p_stimulus  File: F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd
+Error: Input combination 1011 FAILED
+Time: 600 ns  Iteration: 0  Process: /tb_hex_7seg/p_stimulus  File: F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd
+Error: Input combination 1100 FAILED
+Time: 650 ns  Iteration: 0  Process: /tb_hex_7seg/p_stimulus  File: F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd
+Note: Stimulus process finished
+Time: 800 ns  Iteration: 0  Process: /tb_hex_7seg/p_stimulus  File: F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_hex_7seg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 4328.750 ; gain = 5.387
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 4332.688 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hex_7seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_hex_7seg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_hex_7seg'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+"xelab -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2c4f2c14c6c343e19904013e12972903 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.hex_7seg [hex_7seg_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_hex_7seg
+Built simulation snapshot tb_hex_7seg_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/digital-electronics-1/labs/04-segment/display/display.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_hex_7seg_behav -key {Behavioral:sim_1:Functional:tb_hex_7seg} -tclbatch {tb_hex_7seg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source tb_hex_7seg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_hex_7seg/p_stimulus  File: F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd
+Note: Stimulus process finished
+Time: 800 ns  Iteration: 0  Process: /tb_hex_7seg/p_stimulus  File: F:/digital-electronics-1/labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_hex_7seg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 4332.688 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  9 12:35:18 2022...
