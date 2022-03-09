@@ -21,8 +21,8 @@
    | 8 | 1000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
    | 9 | 1001 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
    | A | 1010 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
-   | b | 1011 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-   | c | 1100 | 0 | 0 | 1 | 1 | 0 | 0 | 1 |
+   | b | 1011 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+   | c | 1100 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
    | d | 1101 | 1 | 0 | 0 | 0 | 0 | 1 | 0 |
    | E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
    | F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
@@ -70,10 +70,10 @@
         assert (s_seg = "0001000")
         report "Input combination 1010 FAILED" severity error;
         s_hex <= "1011"; wait for 50 ns;                        --B
-        assert (s_seg = "1110000")
+        assert (s_seg = "1100000")
         report "Input combination 1011 FAILED" severity error;
         s_hex <= "1100"; wait for 50 ns;                        --C
-        assert (s_seg = "0011001")
+        assert (s_seg = "0110001")
         report "Input combination 1100 FAILED" severity error;
         s_hex <= "1101"; wait for 50 ns;                        --D
         assert (s_seg = "1000010")
