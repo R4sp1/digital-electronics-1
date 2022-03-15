@@ -9,7 +9,7 @@ This is only student's repository based on [course repository](https://github.co
  - [x] [02 - logic](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/02-logic/assignment.md)
  - [x] [03 - vivado](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/03-vivado/assignment.md)
  - [x] [04 - segment](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/04-segment/assignment.md)
- - [ ] 05 - ffs
+ - [ ] [04 - ffs](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/05-ffs/assignment.md)
  - [ ] 06 - counter
  - [ ] 07 - display driver
  - [ ] 07 - stopwatch
