@@ -11,7 +11,7 @@ This is only student's repository based on [course repository](https://github.co
  - [x] [04 - segment](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/04-segment/assignment.md)
  - [x] [05 - ffs](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/05-ffs/assignment.md)
  - [x] [06 - counter](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/06-counter/assignment.md)
- - [ ] [07 - display driver](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/07-display driver/assignment.md)
+ - [ ] [07 - display driver](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/07-display_driver/assignment.md)
  - [ ] 07 - stopwatch
  - [ ] 08 - traffic lights
  - [ ] PROJECT
