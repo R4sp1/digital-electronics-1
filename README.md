@@ -13,7 +13,7 @@ This is only student's repository based on [course repository](https://github.co
  - [x] [06 - counter](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/06-counter/assignment.md)
  - [x] [07 - display driver](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/07-display_driver/assignment.md)
  - [ ] 07 - stopwatch
- - [ ] 08 - traffic lights
+ - [ ] [08 - traffic lights](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/08-traffic_lights/assignment.md)
  - [ ] PROJECT
  
 
