@@ -14,7 +14,7 @@ This is only student's repository based on [course repository](https://github.co
  - [x] [07 - display driver](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/07-display_driver/assignment.md)
  - [ ] 07 - stopwatch
  - [x] [08 - traffic lights](https://github.com/R4sp1/digital-electronics-1/blob/main/labs/08-traffic_lights/assignment.md)
- - [ ] PROJECT
+ - [x] [PROJECT](https://github.com/R4sp1/digital-electronics-1-project)
  
 
 
